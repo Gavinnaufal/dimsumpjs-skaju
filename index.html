@@ -1824,11 +1824,6 @@
             <input type="text" id="customer-name" required />
           </div>
 
-          <div class="form-group">
-            <label for="customer-phone">Nomor WhatsApp</label>
-            <input type="number" id="customer-phone" required />
-          </div>
-
           <div class="form-group full-width">
             <label>Metode Pengantaran</label>
             <select id="delivery-method">
@@ -2588,7 +2583,6 @@ Perumahan A, blok B12
       // Update fungsi sendToWhatsApp untuk menyertakan alamat pengantaran
       function sendToWhatsApp() {
         const customerName = document.getElementById("customer-name").value;
-        const customerPhone = document.getElementById("customer-phone").value;
         const deliveryMethodVal =
           document.getElementById("delivery-method").value;
         const deliveryAreaVal = document.getElementById("delivery-area").value;
@@ -2601,8 +2595,8 @@ Perumahan A, blok B12
         const notes = document.getElementById("notes").value;
 
         // Validation
-        if (!customerName || !customerPhone) {
-          alert("Harap lengkapi nama dan nomor WhatsApp Anda.");
+        if (!customerName) {
+          alert("Harap lengkapi nama Anda.");
           return;
         }
 
@@ -2650,7 +2644,6 @@ Perumahan A, blok B12
         // Customer info
         message += `*Data Pemesan:*\n`;
         message += `Nama: ${customerName}\n`;
-        message += `WhatsApp: ${customerPhone}\n`;
         message += `Metode Pengantaran: ${deliveryText}\n`;
 
         // Tambahkan detail lokasi jika diantar
