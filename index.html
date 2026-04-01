@@ -1702,8 +1702,8 @@
                   <p>
                     <strong>Area sekolah:</strong> +Rp2.000 (antar ke kelas)
                   </p>
-                  <p><strong>Area Botania:</strong> +Rp5.000</p>
-                  <p><strong>Area Batam Centre & Nongsa:</strong> +Rp10.000</p>
+                  <p><strong>Area Botania:</strong> +Rp10.000</p>
+                  <p><strong>Area Batam Centre & Nongsa:</strong> +Rp20.000</p>
                 </div>
               </div>
             </div>
@@ -1840,9 +1840,9 @@
             <label for="delivery-area">Area Pengantaran</label>
             <select id="delivery-area">
               <option value="2000">Area Sekolah (+Rp2.000)</option>
-              <option value="5000">Area Botania (+Rp5.000)</option>
-              <option value="10000">
-                Area Batam Centre & Nongsa (+Rp10.000)
+              <option value="10000">Area Botania (+Rp10.000)</option>
+              <option value="20000">
+                Area Batam Centre & Nongsa (+Rp20.000)
               </option>
             </select>
 
@@ -2574,9 +2574,10 @@ Perumahan A, blok B12
       // Tambahkan data deskripsi area di bagian atas JavaScript
       const areaDescriptions = {
         2000: "Pengantaran hanya untuk area dalam sekolah SMKN 7 Batam. Driver akan mengantarkan ke kelas sekolah.",
-        5000: "Pengantaran ke area perumahan Botania dan sekitarnya. Waktu pengantaran menyesuaikan lokasi yang dituju.",
         10000:
-          "Pengantaran ke area Batam Centre, Nongsa, dan sekitarnya. Untuk wilayah yang lebih jauh silakan konfirmasi via WhatsApp.",
+          "Pengantaran ke area perumahan Botania dan sekitarnya. Waktu pengantaran menyesuaikan lokasi yang dituju. Pesanan akan diantar saat jam sekolah selesai!",
+        20000:
+          "Pengantaran ke area Batam Centre, Nongsa, dan sekitarnya. Untuk wilayah yang lebih jauh silakan konfirmasi via WhatsApp. Pesanan akan diantar saat jam sekolah selesai!",
       };
 
       // Send order to WhatsApp
@@ -2648,7 +2649,7 @@ Perumahan A, blok B12
 
         // Tambahkan detail lokasi jika diantar
         if (deliveryMethodVal === "antar" && deliveryAddress.trim()) {
-          message += `Detail Lokasi Pengantaran:\n${deliveryAddress}\n`;
+          message += `Detail Lokasi Pengantaran:\n$ {deliveryAddress}\n`;
         }
 
         message += `Waktu: ${pickupTimeVal} WIB\n`;
