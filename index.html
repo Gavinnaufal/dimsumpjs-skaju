@@ -1314,116 +1314,116 @@
 
       /* Tambahkan CSS ini di bagian yang sesuai atau di akhir style sebelum penutup */
 
-/* QRIS Container - Diperbesar dan Responsif */
-#qris-container {
-  text-align: center;
-  margin: 20px 0;
-}
+      /* QRIS Container - Diperbesar dan Responsif */
+      #qris-container {
+        text-align: center;
+        margin: 20px 0;
+      }
 
-.qris-image {
-  width: 30vw; /* Diperbesar dari 150px */
-  height: 100vh; /* Diperbesar dari 150px */
-  background-color: #f8f8f8;
-  border-radius: 12px; /* Sedikit lebih membulat */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 15px auto;
-  padding: 10px; /* Tambah padding untuk ruang putih di sekitar QRIS */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Tambah bayangan untuk kontras */
-}
+      .qris-image {
+        width: 30vw; /* Diperbesar dari 150px */
+        height: 100vh; /* Diperbesar dari 150px */
+        background-color: #f8f8f8;
+        border-radius: 12px; /* Sedikit lebih membulat */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px auto;
+        padding: 10px; /* Tambah padding untuk ruang putih di sekitar QRIS */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Tambah bayangan untuk kontras */
+      }
 
-.qris-image img {
-  max-width: 50vw;
-  max-height: 100vh;
-  width: auto;
-  height: auto;
-  border-radius: 8px;
-  object-fit: contain; /* Pastikan gambar tidak terdistorsi */
-}
+      .qris-image img {
+        max-width: 50vw;
+        max-height: 100vh;
+        width: auto;
+        height: auto;
+        border-radius: 8px;
+        object-fit: contain; /* Pastikan gambar tidak terdistorsi */
+      }
 
-/* Deskripsi QRIS */
-#qris-container p {
-  text-align: center;
-  font-size: 0.95rem;
-  margin-top: 10px;
-  color: #555;
-  padding: 0 15px;
-}
+      /* Deskripsi QRIS */
+      #qris-container p {
+        text-align: center;
+        font-size: 0.95rem;
+        margin-top: 10px;
+        color: #555;
+        padding: 0 15px;
+      }
 
-#qris-container p strong {
-  color: var(--primary);
-  display: block;
-  margin-bottom: 5px;
-}
+      #qris-container p strong {
+        color: var(--primary);
+        display: block;
+        margin-bottom: 5px;
+      }
 
-/* Responsif QRIS untuk berbagai ukuran layar */
-@media (max-width: 1200px) {
-  .qris-image {
-    width: 80vw;
-    height: 80vh;
-  }
-}
+      /* Responsif QRIS untuk berbagai ukuran layar */
+      @media (max-width: 1200px) {
+        .qris-image {
+          width: 80vw;
+          height: 80vh;
+        }
+      }
 
-@media (max-width: 992px) {
-  .qris-image {
-    width: 80vw;
-    height: 80vh;
-  }
-}
+      @media (max-width: 992px) {
+        .qris-image {
+          width: 80vw;
+          height: 80vh;
+        }
+      }
 
-@media (max-width: 768px) {
-  .qris-image {
-    width: 80vw;
-    height: 80vh;
-  }
-}
+      @media (max-width: 768px) {
+        .qris-image {
+          width: 80vw;
+          height: 80vh;
+        }
+      }
 
-@media (max-width: 576px) {
-  .qris-image {
-    width: 80vw;
-    height: 80vh;
-  }
-  
-  #qris-container p {
-    font-size: 0.85rem;
-    padding: 0 10px;
-  }
-}
+      @media (max-width: 576px) {
+        .qris-image {
+          width: 80vw;
+          height: 80vh;
+        }
 
-/* Tablet landscape */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .qris-image {
-    width: 80vw;
-    height: 80vh;
-  }
-}
+        #qris-container p {
+          font-size: 0.85rem;
+          padding: 0 10px;
+        }
+      }
 
-/* Untuk layar sangat kecil */
-@media (max-width: 400px) {
-  .qris-image {
-    width: 80vw;
-    height: 80vh;
-    padding: 8px;
-  }
-}
+      /* Tablet landscape */
+      @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        .qris-image {
+          width: 80vw;
+          height: 80vh;
+        }
+      }
 
-/* Tambahan: Perbaikan container pembayaran */
-.payment-method label {
-  padding: 20px 15px; /* Sedikit lebih besar */
-}
+      /* Untuk layar sangat kecil */
+      @media (max-width: 400px) {
+        .qris-image {
+          width: 80vw;
+          height: 80vh;
+          padding: 8px;
+        }
+      }
 
-.payment-icon {
-  font-size: 2rem; /* Perbesar icon pembayaran */
-  margin-bottom: 15px;
-}
+      /* Tambahan: Perbaikan container pembayaran */
+      .payment-method label {
+        padding: 20px 15px; /* Sedikit lebih besar */
+      }
 
-/* Efek hover untuk QRIS container */
-.qris-image:hover {
-  transform: scale(1.02);
-  transition: transform 0.3s ease;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-}
+      .payment-icon {
+        font-size: 2rem; /* Perbesar icon pembayaran */
+        margin-bottom: 15px;
+      }
+
+      /* Efek hover untuk QRIS container */
+      .qris-image:hover {
+        transform: scale(1.02);
+        transition: transform 0.3s ease;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      }
     </style>
   </head>
   <body>
@@ -1501,7 +1501,7 @@
           </li>
           <li>
             <a href="#" id="sidebar-cart" class="sidebar-link"
-              ><i class="fas fa-shopping-cart"></i> Keranjang 
+              ><i class="fas fa-shopping-cart"></i> Keranjang
               <span class="sidebar-cart-count">0</span></a
             >
           </li>
@@ -1510,9 +1510,9 @@
 
       <div class="sidebar-footer">
         <div class="sidebar-contact">
-          <p><i class="fas fa-clock"></i> Kamis, 29/01/2026</p>
+          <p><i class="fas fa-clock"></i> Kamis,02/04/2026</p>
           <p><i class="fas fa-map-marker-alt"></i> SMKN 7 Batam</p>
-            <p><i class="fab fa-whatsapp"></i>+62 877-6128-8962</p>
+          <p><i class="fab fa-whatsapp"></i>+62 857-6351-8667</p>
         </div>
       </div>
     </div>
@@ -1534,7 +1534,7 @@
           <div class="tagline">#DIMSUMOSTWANTED</div>
 
           <div class="date-info">
-            <i class="far fa-calendar-alt"></i> Hanya Kamis, 29/01/2026 &nbsp; |
+            <i class="far fa-calendar-alt"></i> Hanya Kamis, 02/04/2026 &nbsp; |
             &nbsp; <i class="far fa-clock"></i> 08:00 – 15:30 WIB
           </div>
 
@@ -1696,8 +1696,8 @@
                 <div>
                   <h4>SMKN 7 Batam</h4>
                   <p>
-                    PERUM SEKAWAN PEMKO, Kec. Batam Kota, Kota Batam,
-                    Prov. Kepulauan Riau. Lintang. 1.110046. Bujur. 104.085841.
+                    PERUM SEKAWAN PEMKO, Kec. Batam Kota, Kota Batam, Prov.
+                    Kepulauan Riau. Lintang. 1.110046. Bujur. 104.085841.
                   </p>
                   <p>
                     <strong>Area sekolah:</strong> +Rp2.000 (antar ke kelas)
@@ -1714,7 +1714,7 @@
                 <i class="far fa-clock"></i>
                 <div>
                   <h4>Market Day</h4>
-                  <p><strong>Hari:</strong> Kamis, 29 Januari 2026</p>
+                  <p><strong>Hari:</strong> Kamis, 2 April 2026</p>
                   <p><strong>Jam:</strong> 08:00 - 15:30 WIB</p>
                   <p>
                     <strong>Waktu Ambil/Antar:</strong> Setiap 30 menit (08:00 -
@@ -1752,7 +1752,7 @@
                 <i class="fab fa-whatsapp"></i>
                 <div>
                   <h4>WhatsApp</h4>
-                  <p>+62 877-6128-8962</p>
+                  <p>+62 857-6351-8667</p>
                   <p>Pesan otomatis akan dibuat setelah checkout</p>
                 </div>
               </div>
@@ -1933,7 +1933,7 @@ Perumahan A, blok B12
           >
             <label>QR Code Pembayaran</label>
             <div class="qris-image">
-            <img src="img/qris-pjs.jpeg" alt="">  
+              <img src="img/qris-pjs.jpeg" alt="" />
             </div>
             <p style="text-align: center; font-size: 0.9rem; margin-top: 10px">
               Scan QRIS di atas untuk pembayaran. Jangan lupa bukti screenshot
@@ -2001,14 +2001,14 @@ Perumahan A, blok B12
 
           <div class="footer-column">
             <h3>Informasi</h3>
-            <p><i class="far fa-calendar-alt"></i> Kamis, 29 Januari 2026</p>
+            <p><i class="far fa-calendar-alt"></i> Kamis, 2 April 2026</p>
             <p><i class="far fa-clock"></i> 08:00 - 15:30 WIB</p>
             <p><i class="fas fa-map-marker-alt"></i> SMKN 7 Batam</p>
           </div>
 
           <div class="footer-column">
             <h3>Kontak</h3>
-            <p><i class="fab fa-whatsapp"></i>+62 877-6128-8962</p>
+            <p><i class="fab fa-whatsapp"></i>+62 857-6351-8667</p>
           </div>
         </div>
 
@@ -2660,7 +2660,7 @@ Perumahan A, blok B12
 
         // Encode message for URL
         const encodedMessage = encodeURIComponent(message);
-        const phoneNumber = "6287761288962"; // Replace with actual number
+        const phoneNumber = "6285763518667"; // Replace with actual number
 
         // Open WhatsApp
         window.open(
